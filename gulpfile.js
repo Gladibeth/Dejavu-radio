@@ -75,7 +75,7 @@ gulp.task('add_materialize', function () {
 
 //Save cache and minify images
 gulp.task('images', function () {
-  return gulp.src('app/img/**/*.+(png|jpg|jpeg|gif|svg|pdf|mp4|webp)')
+  return gulp.src('app/img/**/*.+(webp|jpg|jpeg|gif|svg|pdf|mp4|webp)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
       interlaced: true
@@ -140,7 +140,7 @@ gulp.task('default', ['browserSync', 'compile_haml', 'compile_sass', 'css', 'js'
   gulp.watch('app/**/*.haml', ['compile_haml']);
   gulp.watch('app/css/*.+(css|min.css)', ['css']);
   gulp.watch('app/js/**/*.js', ['js']);
-  gulp.watch('app/img/**/*.+(png|jpg|jpeg|gif|svg)', browserSync.reload);
+  gulp.watch('app/img/**/*.+(webp|jpg|jpeg|gif|svg)', browserSync.reload);
 
   // Other watchers
 });

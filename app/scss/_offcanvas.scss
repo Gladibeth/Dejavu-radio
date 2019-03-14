@@ -30,7 +30,7 @@ body {
     transition-property: left, visibility;
 
     @include respond-to(xs) {
-      top: 48px;
+      top: 56px;
     }
 
     @include respond-to(sm) {

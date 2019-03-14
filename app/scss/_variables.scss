@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
-
-
 // Medias querys
 $breakpoints: (
   'xs': "(min-width: 0px) and (max-width: 767px)",
@@ -11,7 +8,8 @@ $breakpoints: (
 ) !default;
 
 // Fonts
-$montserrat: 'Montserrat', sans-serif; // Titles
+$montserrat: 'Montserrat', system-ui; // Titles
+$lato: 'Lato', system-ui; // Titles
 
 // General
 $white: #fff;

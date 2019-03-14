@@ -1,5 +1,6 @@
 %nav.navbar.navbar-expand-lg.fixed-top  
   %a.navbar-brand.mr-auto.mr-lg-0{:href => "#"}
+    %img.d-lg-none{src:"assets/img/img_movil.webp", alt:"", style: "width: 60px;"}/
   %button.navbar-toggler.p-0.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
     %span.hamburger-box
       %span.hamburger-inner
@@ -7,33 +8,37 @@
     .container
       .row.d-flex.align-items-center.content-navbar
         .col-lg-4.col-md-4.col-sm-4
-          %img{src:"assets/img/img_1.png", alt:""}/
+          %img{src:"assets/img/img_1.webp", alt:""}/
         .col-lg-4.col-md-4.col-sm-4.d-flex.justify-content-center
-          %img{src:"assets/img/img_2.png", alt:""}/
-        .col-lg-4.col-md-4.col-sm-4.d-flex.justify-content-end
-          %a.oneline{:href => "#"} ONELINE RADIO
+          %img{src:"assets/img/img_2.webp", alt:""}/
+        .col-lg-4.col-md-4.col-sm-4.d-flex.justify-content-end.flex-column.align-items-end
+          .audio
+            %img{src:"assets/img/audio.gif", alt:""}/
+          %a.online{:href => "#"} ONLINE RADIO
         .col-lg-4.col-md-4.col-sm-4.mt-4
-          %img{src:"assets/img/img_3.png", alt:""}/
+          %img{src:"assets/img/img_3.webp", alt:""}/
         .col-lg-4.col-md-4.col-sm-4.mt-4.d-flex.align-items-center{style: "flex-direction: column;"}
-          %img{src:"assets/img/img_4.png", alt:""}/
+          %img{src:"assets/img/img_4.webp", alt:""}/
           .redes-sociales.mt-2
             %a{href:""}
-              %img.redes{src:"assets/img/1.png", alt:""}/
+              %img.redes{src:"assets/img/1.webp", alt:""}/
             %a{href:""}
-              %img.redes{src:"assets/img/2.png", alt:""}/
+              %img.redes{src:"assets/img/2.webp", alt:""}/
             %a{href:""}
-              %img.redes{src:"assets/img/3.png", alt:""}/
+              %img.redes{src:"assets/img/3.webp", alt:""}/
             %a{href:""}
-              %img.redes{src:"assets/img/4.png", alt:""}/
+              %img.redes{src:"assets/img/4.webp", alt:""}/
             %a{href:""}
-              %img.redes{src:"assets/img/5.png", alt:""}/
+              %img.redes{src:"assets/img/5.webp", alt:""}/
             %a{href:""}
-              %img.redes{src:"assets/img/6.png", alt:""}/
+              %img.redes{src:"assets/img/6.webp", alt:""}/
+            %a{href:""}
+              %img.redes{src:"assets/img/7.webp", alt:""}/
         .col-lg-4.col-md-4.col-sm-4.mt-4.d-flex.justify-content-end
           %button.menu-desk-js.p-0.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
             %span.hamburger-box
               %span.hamburger-inner
-      .menu-mobil.d-lg-none
+      .menu-movil.d-lg-none
         %ul.navbar-nav.p-4
           %li.nav-item
             %a.nav-link.active{:href => "index.html"} Inicio
@@ -43,6 +48,22 @@
             %a.nav-link{:href => "notice.html"} Noticias
           %li.nav-item
             %a.nav-link{:href => "collaborators.html"} Colaboradores
+      .redes-movil.d-lg-none.d-flex.justify-content-center  
+        .redes-sociales.mt-2
+          %a{href:""}
+            %img.redes{src:"assets/img/1.webp", alt:""}/
+          %a{href:""}
+            %img.redes{src:"assets/img/2.webp", alt:""}/
+          %a{href:""}
+            %img.redes{src:"assets/img/3.webp", alt:""}/
+          %a{href:""}
+            %img.redes{src:"assets/img/4.webp", alt:""}/
+          %a{href:""}
+            %img.redes{src:"assets/img/5.webp", alt:""}/
+          %a{href:""}
+            %img.redes{src:"assets/img/6.webp", alt:""}/
+          %a{href:""}
+            %img.redes{src:"assets/img/7.webp", alt:""}/
 .menu-sidebar
   %ul.navbar-nav.p-4
     %li.nav-item

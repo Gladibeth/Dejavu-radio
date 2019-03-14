@@ -45,16 +45,8 @@
   background-position: 0 35%;
   transition: 600ms ease-in-out;
 
-  @include respond-to(md) {
-    top: -30%;
-  }
-
-  @include respond-to(sm) {
-    top: -20% !important;
-  }
-
   @include respond-to(xs) {
-    top: -8% !important;
+    top: 50% !important;
   }
 
   @include respond-to(xs) {
@@ -71,15 +63,15 @@
   z-index: 1;
 
   @include respond-to(md) {
-    left: 85%;
+    left: -5%;
   }
 
   @include respond-to(sm) {
-    left: 81%;
+    left: -8%;
   }
 
   @include respond-to(xs) {
-    left: 64%;
+    left: -18%;
   }
 
   &:before {
@@ -106,9 +98,7 @@
     right: 4%;
   }
 
-  @include respond-to(xs) {
-    right: 3% !important;
-  }
+ 
 
   &:before {
     content: "\f061" !important;
