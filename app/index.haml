@@ -1,0 +1,28 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{:lang => "en"}
+  = render ('app/partials/head.haml')
+  - $action_name = 'index'
+  %body
+    = render ('app/partials/navbar.haml')
+    %section.welcome{style: "background-image: url('assets/img/bg_1.png')"}
+      .container
+        .row
+          .col-lg-6.col-md-6.col-sm-12.col-12
+            .content-text
+              .img-welcome
+                %h1 Bienvenidos
+                -# %img{src: "assets/img/welcome.png", alt: ""}
+              .text-welcome.mt-4
+                %p Esperamos que este encuentro con Dejavu sea muy emotivo y que no solamente recuerdes los buenos tiempos, sino que también vivas momentos muy agradables. Gracias por tu visita, tu persona es siempre bienvenida. Disfruta la música
+          .col-lg-6.col-md-6.col-sm-12.col-12
+            .content-video
+              %h2 El video del dia
+              %video#myVideo.d-none.d-md-block{muted: "", controls: "true", autoplay: "true", loop: "true", poster: "", style: "width: 65%;"}
+                %source{src: "assets/img/slicegroup.mp4", type: "video/mp4"}
+    
+
+    = render ('app/partials/footer.haml') 

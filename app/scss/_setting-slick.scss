@@ -1,0 +1,125 @@
+
+/* == Slick dots == */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  position: relative;
+}
+
+.slick-dots li{
+  height: 10px !important;
+  margin: 0 2px !important;
+  width: 10px !important;
+    
+
+  &.slick-active {
+    button:before {
+      background-color: $blue-dejavu !important;
+      opacity: 1;
+      border-radius: 50%;
+    }
+  }
+
+  button {
+    height: 100%;
+    width: 100%;
+
+    &:before {
+      content: "";
+      background-color: $main-dejavu !important;
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+      border-radius: 50%;
+    }
+  }
+}
+
+/* == Slick arrows == */
+.slick-prev, .slick-next {
+  height: 50px !important;
+  width: 50px !important;
+  background-repeat: repeat-y;
+  background-size: 0% 0em;
+  background-position: 0 35%;
+  transition: 600ms ease-in-out;
+
+  @include respond-to(md) {
+    top: -30%;
+  }
+
+  @include respond-to(sm) {
+    top: -20% !important;
+  }
+
+  @include respond-to(xs) {
+    top: -8% !important;
+  }
+
+  @include respond-to(xs) {
+    top: 75%;
+  }
+
+  &:before {
+    font-family: 'FontAwesome' !important;
+  }
+}
+
+.slick-prev {
+  left: -4%;
+  z-index: 1;
+
+  @include respond-to(md) {
+    left: 85%;
+  }
+
+  @include respond-to(sm) {
+    left: 81%;
+  }
+
+  @include respond-to(xs) {
+    left: 64%;
+  }
+
+  &:before {
+    content: "\f060" !important;
+    color: #3f3f3f !important;
+  }
+
+  &:hover {
+    &:before {
+      content: "\f060" !important;
+      color: $blue-dejavu !important;
+    }
+  }
+}
+
+.slick-next {
+  right: -44px !important;
+
+  @include respond-to(xl) {
+    right: 5%;
+  }
+
+  @include respond-to(sm) {
+    right: 4%;
+  }
+
+  @include respond-to(xs) {
+    right: 3% !important;
+  }
+
+  &:before {
+    content: "\f061" !important;
+    color: #3f3f3f !important;
+  }
+
+  &:hover {
+    &:before {
+      content: "\f061" !important;
+      color:  $blue-dejavu !important;
+    }
+  }
+
+}

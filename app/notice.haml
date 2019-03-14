@@ -1,0 +1,31 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{:lang => "en"}
+  = render ('app/partials/head.haml')
+  - $action_name = 'index'
+  %body
+    = render ('app/partials/navbar.haml')
+    %section.welcome{style: "background-image: url('assets/img/bg_1.png')"}
+      .container
+        .row
+          .col-lg-12
+            .content-text
+              .img-welcome
+                %img{src: "assets/img/notice.png", alt: ""}
+              .text-welcome.mt-4
+                %p Dejavu se complace en infórmeles que ya puedes escuchar en nuestra plataforma los programas Talento fresco, Ecos de Borinquén y Escritorio público como parte de nuestra programacion Regular.
+                %p Para los horarios visita nuestra página de colaboradores.
+        .main-carousel
+          .item
+            %img{src:"assets/img/02.jpg", alt:""}/
+          .item
+            %img{src:"assets/img/02.jpg", alt:""}/
+          .item
+            %img{src:"assets/img/02.jpg", alt:""}/
+          .item
+            %img{src:"assets/img/02.jpg", alt:""}/
+                  
+    = render ('app/partials/footer.haml') 

@@ -1,0 +1,63 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{:lang => "en"}
+  = render ('app/partials/head.haml')
+  - $action_name = 'index'
+  %body
+    = render ('app/partials/navbar.haml')
+    %section.welcome{style: "background-image: url('assets/img/bg_1.png')"}
+      .container
+        .row
+          .col-lg-4
+            .content-text
+              .img-welcome
+                -# %h1 ¿Quiénes Somos?
+                %img{src: "assets/img/colaboradores.png", alt: ""}
+              .row
+                .col-lg-6
+                  .image-colaborador
+                    %img{src: "assets/img/collaborators_1.png", alt: ""}
+                .col-lg-6
+                  .image-colaborador
+                    %img{src: "assets/img/collaborators_2.png", alt: ""}
+                .col-lg-6
+                  .image-colaborador
+                    %img{src: "assets/img/collaborators_3.png", alt: ""}
+                .col-lg-6
+                  .image-colaborador
+                    %img{src: "assets/img/collaborators_2.png", alt: ""}
+          .col-lg-8
+            .row
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                  -# %img{src: "assets/img/colaboradores.png", alt: ""}
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                -# %img{src: "assets/img/colaboradores.png", alt: ""}
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                  -# %img{src: "assets/img/colaboradores.png", alt: ""}
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                -# %img{src
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                  -# %img{src: "assets/img/colaboradores.png", alt: ""}
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                -# %img{src
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                -# %img{src
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                  -# %img{src: "assets/img/colaboradores.png", alt: ""}
+              .col-lg-4.d-flex.justify-content-center
+                .image-colaborador
+                -# %img{src
+              
+                      
+    = render ('app/partials/footer.haml') 

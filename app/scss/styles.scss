@@ -1,0 +1,193 @@
+@import 'variables';
+@import 'mixins';
+@import 'offcanvas';
+@import 'setting-slick';
+
+/* -------------------------
+   -----  Nav -----
+   ------------------------- */
+.navbar {
+  background-color: $main-dejavu;
+  width: 100%;
+}
+
+.content-navbar {
+  width: 100%;
+  @include respond-to(xs) {
+    display: none !important;
+  }
+}
+
+img {
+  width: 90px;
+  height: 100%;
+}
+
+.oneline {
+  color: $white;
+  font-weight: 900;
+  font-size: 25px;
+  transition: 0.3s ease-in-out;
+
+  &:hover{
+    text-decoration: none;
+    color: $orange-dejavu;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.redes {
+  width: 30px;
+}
+
+.menu-sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: $main-dejavu;
+  position: absolute;
+  right: -20%;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease-in-out;
+
+  @include respond-to(sm) {
+    display: none;
+  }
+
+  @include respond-to(xs) {
+    display: none;
+  }
+
+  &.open{
+    right: 0;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.nav-link {
+  color: $white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: .5s ease-in-out;
+  position: relative;
+  transition: all 2s;
+  overflow: hidden;
+  // text-align: center;
+  &::before{
+    left: 0%;
+    bottom: 0;
+    width: 50%;
+    height: 3px;
+    background: $white;
+    transform: translateX(-101%);
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+  }
+
+
+  &:hover {
+    &::before{
+      transform: translateX(0);
+    }
+  }
+  &.active {
+    &::before{
+      transform: translateX(0);
+    }
+  }
+}
+/* -------------------------
+   -----  Welcome-----
+   ------------------------- */
+.welcome {
+  background-position: center bottom;
+  background-repeat: repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.img-welcome{
+  width: 200px;
+
+  h1{
+    color: $orange-dejavu;
+    font-weight: 900;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.content-video {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+}
+
+/* -------------------------
+   -----  Footer -----
+   ------------------------- */
+.footer {
+  // position: fixed;
+  // left: 0;
+  // bottom: 0;
+  width: 100%;
+  background-color: $main-dejavu;
+  color: $white;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.footer-content {
+  width: 50%;
+
+  @include respond-to(xs) {
+    width: 100%;
+    padding: 20px;  
+  }
+  @include respond-to(sm) {
+    width: 100%;
+    padding: 20px;  
+  }
+}
+
+/* -------------------------
+   -----  Carousel -----
+   ------------------------- */
+.item {
+  width: 300px;
+  height: 230px;
+  padding: 5px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.image-colaborador {
+  margin: 20px;
+  width: 100px; 
+  height: 120px; 
+  border-radius: 30px; 
+  border: 3px solid $blue-dejavu;
+
+  img {
+    border-radius: 30px;
+    width: 100%;
+  }
+}
