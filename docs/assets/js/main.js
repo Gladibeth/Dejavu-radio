@@ -44,7 +44,7 @@ $('a.nav-link').hover(function () {
 $(document).ready(function () {
   WebFontConfig = {
     google: {
-      families: ['Montserrat:300,400,500,600,700,800,900', 'Lato:300,400,700,900']
+      families: ['Teko:300,400,500,600,700,800,900', 'Aladin:300,400,700,900']
     }
   };
   (function () {
