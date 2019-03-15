@@ -15,15 +15,15 @@
             .content-text
               .img-welcome
                 %h1 Bienvenidos
-                -# %img{src: "assets/img/welcome.webp", alt: ""}
               .text-welcome.mt-4
                 %p Esperamos que este encuentro con Dejavu sea muy emotivo y que no solamente recuerdes los buenos tiempos, sino que también vivas momentos muy agradables. Gracias por tu visita, tu persona es siempre bienvenida. Disfruta la música.
           .col-lg-6.col-md-6.col-sm-12.col-12
             .content-video
-              .title-video
-                %h2 El video del día
-              %video#myVideo{muted: "", controls: "true", poster: ""}
-                %source{src: "assets/img/slicegroup.mp4", type: "video/mp4"}
-    
-
+              .title-video.d-flex
+                %button{:onclick => "playPause()", style: "background-color: transparent; border: 0;outline: 0;"}
+                  %i.fa.fa-youtube-play{style: "color: white;font-size: 100px;"}
+                %h2 El video del día   
+              %video#myVideo{muted: "", poster: "", style: "width: 300px;"}
+                %source{src: "assets/img/video.mp4", type: "video/mp4"}
+                    
     = render ('app/partials/footer.haml') 

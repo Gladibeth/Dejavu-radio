@@ -425,7 +425,7 @@ img {
 
 .menu-sidebar {
   width: 20%;
-  height: 100%;
+  height: 500px;
   background-color: #3e3f36;
   position: absolute;
   right: -20%;
@@ -558,6 +558,9 @@ img {
   width: 65%;
   margin-bottom: 20px;
   background-color: #41719c;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
 }
 
 .content-video .title-video h2 {

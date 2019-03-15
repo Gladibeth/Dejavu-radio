@@ -99,3 +99,13 @@ $('.main-carousel').slick({
     }
   ]
 });
+
+
+var myVideo = document.getElementById("myVideo");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
