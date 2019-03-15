@@ -87,7 +87,7 @@ img {
 
 .nav-link {
   color: $white;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 1px;
   transition: .5s ease-in-out;
   position: relative;
@@ -114,6 +114,9 @@ img {
 
 
   &:hover {
+    color: $blue-dejavu;
+    font-weight: 400;
+    transition: .5s ease-in-out;
     &::before{
       transform: translateX(0);
     }
@@ -167,15 +170,40 @@ img {
 
 .content-video {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
   width: 100%;
   height: 250px;
 
-  h2 {
-    font-family: $montserrat;
-    font-size: 25px;
+  @include respond-to(xs){
+    align-items: center;
+    margin-top: 20px;
+  }
+  .title-video {
+    border-radius: 10px;
+    width: 65%;
+    // height: 40px;
+    margin-bottom: 20px;
+    background-color: $blue-dejavu;
+    
+    h2 {
+      font-family: $montserrat;
+      font-size: 23px;
+      font-weight: 700;
+      color: $white;
+      padding: 10px 5px 0px;
+      text-align: center;
+    }
+  }
+}
+
+#myVideo {
+  width: 65%;
+  border: 5px solid $blue-dejavu;
+  border-radius: 10px;
+  @include respond-to(xs) {
+    width: 100%;
   }
 }
 
@@ -241,3 +269,5 @@ img {
     width: 100%;
   }
 }
+
+

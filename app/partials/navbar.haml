@@ -33,7 +33,7 @@
             %a{href:""}
               %img.redes{src:"assets/img/6.webp", alt:""}/
             %a{href:""}
-              %img.redes{src:"assets/img/7.webp", alt:""}/
+              %img.redes{src:"assets/img/7.png", alt:""}/
         .col-lg-4.col-md-4.col-sm-4.mt-4.d-flex.justify-content-end
           %button.menu-desk-js.p-0.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
             %span.hamburger-box
@@ -41,13 +41,13 @@
       .menu-movil.d-lg-none
         %ul.navbar-nav.p-4
           %li.nav-item
-            %a.nav-link.active{:href => "index.html"} Inicio
+            %a.nav-link{:href => "index.html", class: "#{$action_name == 'index' ? 'active' : ''}"} Inicio
           %li.nav-item
-            %a.nav-link{:href => "about.html"} Quiénes somos
+            %a.nav-link{:href => "about.html", class: "#{$action_name == 'about' ? 'active' : ''}"} Quiénes somos
           %li.nav-item
-            %a.nav-link{:href => "notice.html"} Noticias
+            %a.nav-link{:href => "notice.html",class: "#{$action_name == 'notice' ? 'active' : ''}"} Noticias
           %li.nav-item
-            %a.nav-link{:href => "collaborators.html"} Colaboradores
+            %a.nav-link{:href => "collaborators.html", class: "#{$action_name == ' collaborators' ? 'active' : ''}"} Colaboradores
       .redes-movil.d-lg-none.d-flex.justify-content-center  
         .redes-sociales.mt-2
           %a{href:""}
@@ -63,14 +63,14 @@
           %a{href:""}
             %img.redes{src:"assets/img/6.webp", alt:""}/
           %a{href:""}
-            %img.redes{src:"assets/img/7.webp", alt:""}/
+            %img.redes{src:"assets/img/7.png", alt:""}/
 .menu-sidebar
   %ul.navbar-nav.p-4
     %li.nav-item
-      %a.nav-link.active{:href => "index.html"} Inicio
+      %a.nav-link{:href => "index.html", class: "#{$action_name == 'index' ? 'active' : ''}"} Inicio
     %li.nav-item
-      %a.nav-link{:href => "about.html"} Quiénes somos
+      %a.nav-link{:href => "about.html", class: "#{$action_name == 'about' ? 'active' : ''}"} Quiénes somos
     %li.nav-item
-      %a.nav-link{:href => "notice.html"} Noticias
+      %a.nav-link{:href => "notice.html",class: "#{$action_name == 'notice' ? 'active' : ''}"} Noticias
     %li.nav-item
-      %a.nav-link{:href => "collaborators.html"} Colaboradores
+      %a.nav-link{:href => "collaborators.html", class: "#{$action_name == ' collaborators' ? 'active' : ''}"} Colaboradores

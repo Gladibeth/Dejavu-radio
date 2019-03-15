@@ -5,7 +5,7 @@
 !!!
 %html{:lang => "en"}
   = render ('app/partials/head.haml')
-  - $action_name = 'index'
+  - $action_name = 'notice'
   %body
     = render ('app/partials/navbar.haml')
     %section.welcome{style: "background-image: url('assets/img/bg_1.webp')"}
@@ -20,12 +20,12 @@
                 %p Para los horarios visita nuestra página de colaboradores.
         .main-carousel
           .item
-            %img{src:"assets/img/02.jpg", alt:""}/
+            %img{src:"assets/img/03.webp", alt:""}/
           .item
-            %img{src:"assets/img/02.jpg", alt:""}/
+            %img{src:"assets/img/02.webp", alt:""}/
           .item
-            %img{src:"assets/img/02.jpg", alt:""}/
+            %img{src:"assets/img/02.webp", alt:""}/
           .item
-            %img{src:"assets/img/02.jpg", alt:""}/
+            %img{src:"assets/img/04.webp", alt:""}/
                   
     = render ('app/partials/footer.haml') 
