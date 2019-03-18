@@ -24,7 +24,7 @@
         <div class='col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-center'>
           <img alt='' class='company' src='assets/img/img_2.webp'>
         </div>
-        <div class='col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-end flex-column align-items-center'>
+        <div class='col-lg-4 col-md-4 col-sm-4 col-4 d-flex justify-content-end flex-column align-items-center pl-3 pr-0'>
           <p class='mb-0 online' href='#'>ONLINE</p>
           <p class='online' href='#' style='margin-top: -15px;'>RADIO</p>
         </div>
@@ -121,19 +121,19 @@
             <li class='nav-item'>
               <a class='active nav-link' href='index.html'>Inicio</a>
             </li>
-            <li class='nav-item'>
+            <li class='nav-item d-sm-none'>
               <a class='nav-link' href='new-video.html'>Video del día</a>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='about.html'>Quiénes somos</a>
             </li>
-            <li class='nav-item'>
+            <li class='nav-item d-sm-none'>
               <a class='nav-link' href='history.html'>História</a>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='notice.html'>Noticias</a>
             </li>
-            <li class='nav-item'>
+            <li class='nav-item d-sm-none'>
               <a class='nav-link' href='advertising.html'>Publicidad</a>
             </li>
             <li class='nav-item'>
@@ -171,6 +171,19 @@
             <div class="text-welcome mt-4">
               <p>Esperamos que este encuentro con Dejavu sea muy emotivo y que no solamente recuerdes los buenos tiempos, sino que también vivas momentos muy agradables. Gracias por tu visita, tu persona es siempre bienvenida. Disfruta la música.</p>
             </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-none d-sm-block">
+          <div class="content-video">
+            <div class="title-video d-flex">
+              <button onclick="playPause()" style="background-color: transparent; border: 0;outline: 0;">
+                  <i class="fa fa-youtube-play"></i>
+                </button>
+              <h2>El video del día</h2>
+            </div>
+            <video id="myVideo" muted="" poster="" style="width: 300px;">
+                <source src="assets/img/video.mp4" type="video/mp4">
+              </video>
           </div>
         </div>
       </div>

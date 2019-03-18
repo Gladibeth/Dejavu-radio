@@ -47,7 +47,7 @@ body {
 
 @media (max-width: 991.98px) and (min-width: 768px) and (max-width: 991px) {
   .offcanvas-collapse {
-    top: 180px;
+    top: 155px;
   }
 }
 
@@ -171,7 +171,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hamburger-inner {
-    width: 25px;
+    width: 35px;
   }
 }
 
@@ -206,7 +206,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hamburger-inner::before {
-    width: 25px;
+    width: 35px;
   }
 }
 
@@ -229,7 +229,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hamburger-inner:after {
-    width: 25px;
+    width: 35px;
   }
 }
 

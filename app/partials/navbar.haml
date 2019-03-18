@@ -10,7 +10,7 @@
         %img.world{src:"assets/img/img_1.webp", alt:""}/
       .col-lg-4.col-md-4.col-sm-4.col-4.d-flex.justify-content-center
         %img.company{src:"assets/img/img_2.webp", alt:""}/
-      .col-lg-4.col-md-4.col-sm-4.col-4.d-flex.justify-content-end.flex-column.align-items-center
+      .col-lg-4.col-md-4.col-sm-4.col-4.d-flex.justify-content-end.flex-column.align-items-center.pl-3.pr-0
         %p.mb-0.online{:href => "#"} ONLINE 
         %p.online{:href => "#", style: "margin-top: -15px;"} RADIO
       .col-lg-4.col-md-4.col-sm-4.col-4
@@ -73,15 +73,15 @@
         %ul.navbar-nav.p-4
           %li.nav-item
             %a.nav-link{:href => "index.html", class: "#{$action_name == 'index' ? 'active' : ''}"} Inicio
-          %li.nav-item
+          %li.nav-item.d-sm-none
             %a.nav-link{:href => "new-video.html", class: "#{$action_name == 'new-video' ? 'active' : ''}"} Video del día
           %li.nav-item
             %a.nav-link{:href => "about.html", class: "#{$action_name == 'about' ? 'active' : ''}"} Quiénes somos
-          %li.nav-item
+          %li.nav-item.d-sm-none
             %a.nav-link{:href => "history.html", class: "#{$action_name == 'history' ? 'active' : ''}"} História
           %li.nav-item
             %a.nav-link{:href => "notice.html",class: "#{$action_name == 'notice' ? 'active' : ''}"} Noticias
-          %li.nav-item
+          %li.nav-item.d-sm-none
             %a.nav-link{:href => "advertising.html",class: "#{$action_name == 'advertising' ? 'active' : ''}"} Publicidad
           %li.nav-item
             %a.nav-link{:href => "collaborators.html", class: "#{$action_name == ' collaborators' ? 'active' : ''}"} Colaboradores
