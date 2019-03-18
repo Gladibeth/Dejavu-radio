@@ -97,7 +97,7 @@ img {
   background-color: $main-dejavu;
   position: absolute;
   right: -20%;
-  top: 36%;
+  // top: 36%;
   z-index: 9999;
   margin: 0;
   padding: 0;
@@ -113,7 +113,7 @@ img {
 
   &.open{
     right: 0;
-    top: 36%;
+    // top: 36%;
     transition: 0.5s ease-in-out;
     position: fixed;
   }
