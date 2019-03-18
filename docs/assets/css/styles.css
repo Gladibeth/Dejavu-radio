@@ -32,7 +32,7 @@ body {
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: #3e3f36;
+    background-color: #3e3f36 !important;
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
@@ -155,7 +155,7 @@ body {
   margin-top: -2px;
   width: 35px;
   height: 4px;
-  background-color: #3e3f36;
+  background-color: #3e3f36 !important;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
@@ -176,21 +176,21 @@ body {
 }
 
 .hamburger-inner.js-hamburger {
-  background-color: #3e3f36;
+  background-color: #3e3f36 !important;
 }
 
 .hamburger-inner.js-hamburger:before {
-  background-color: #3e3f36;
+  background-color: #3e3f36 !important;
 }
 
 .hamburger-inner.js-hamburger::after {
-  background-color: #3e3f36;
+  background-color: #3e3f36 !important;
 }
 
 .hamburger-inner::before {
   width: 35px;
   height: 4px;
-  background-color: #3e3f36;
+  background-color: #3e3f36 !important;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
@@ -213,7 +213,7 @@ body {
 .hamburger-inner:after {
   width: 35px;
   height: 4px;
-  background-color: #3e3f36;
+  background-color: #3e3f36 !important;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
@@ -506,7 +506,6 @@ img {
   background-color: #3e3f36;
   position: absolute;
   right: -20%;
-  top: 36%;
   z-index: 9999;
   margin: 0;
   padding: 0;
@@ -527,7 +526,6 @@ img {
 
 .menu-sidebar.open {
   right: 0;
-  top: 36%;
   transition: 0.5s ease-in-out;
   position: fixed;
 }
