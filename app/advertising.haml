@@ -1,0 +1,23 @@
+:ruby
+  def render(partial)
+    Haml::Engine.new(File.read(partial)).render
+  end
+!!!
+%html{:lang => "en"}
+  = render ('app/partials/head.haml')
+  - $action_name = 'advertising'
+  %body
+    = render ('app/partials/navbar.haml')
+    %section.welcome{style: "background-image: url('assets/img/bg_1.webp')"}
+      .container
+        .main-carousel
+          .item
+            %img{src:"assets/img/03.webp", alt:""}/
+          .item
+            %img{src:"assets/img/02.webp", alt:""}/
+          .item
+            %img{src:"assets/img/02.webp", alt:""}/
+          .item
+            %img{src:"assets/img/04.webp", alt:""}/
+                  
+    = render ('app/partials/footer.haml') 

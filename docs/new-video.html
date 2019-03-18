@@ -122,10 +122,10 @@
               <a class='nav-link' href='index.html'>Inicio</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='new-video.html'>Video del día</a>
+              <a class='active nav-link' href='new-video.html'>Video del día</a>
             </li>
             <li class='nav-item'>
-              <a class='active nav-link' href='about.html'>Quiénes somos</a>
+              <a class='nav-link' href='about.html'>Quiénes somos</a>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='history.html'>História</a>
@@ -150,7 +150,7 @@
         <a class='nav-link' href='index.html'>Inicio</a>
       </li>
       <li class='nav-item'>
-        <a class='active nav-link' href='about.html'>Quiénes somos</a>
+        <a class='nav-link' href='about.html'>Quiénes somos</a>
       </li>
       <li class='nav-item'>
         <a class='nav-link' href='notice.html'>Noticias</a>
@@ -163,14 +163,17 @@
   <section class="welcome" style="background-image: url('assets/img/bg_1.webp')">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="content-text">
-            <div class="img-welcome">
-              <img alt="" src="assets/img/about.webp">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="content-video">
+            <div class="title-video d-flex">
+              <button onclick="playPause()" style="background-color: transparent; border: 0;outline: 0;">
+                  <i class="fa fa-youtube-play"></i>
+                </button>
+              <h2>El video del día</h2>
             </div>
-            <div class="text-welcome mt-4">
-              <p>Dejavu nace en la ciudad de East Hartford- Connecticut como emisora online en el año 2017 posicionándose como una de las principales emisoras online. Su enfoque únicamente en el estilo de música de los años 80.</p>
-            </div>
+            <video id="myVideo" muted="" poster="" style="width: 300px;">
+                <source src="assets/img/video.mp4" type="video/mp4">
+              </video>
           </div>
         </div>
       </div>

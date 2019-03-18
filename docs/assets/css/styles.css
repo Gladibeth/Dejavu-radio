@@ -149,6 +149,12 @@ body {
   position: relative;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .hamburger-box {
+    width: 25px;
+  }
+}
+
 .hamburger-inner {
   display: block;
   top: 50%;
@@ -165,13 +171,13 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hamburger-inner {
-    background-color: #fff;
+    width: 25px;
   }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .hamburger-inner {
-    background-color: #fff;
+    width: 25px;
   }
 }
 
@@ -200,13 +206,13 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hamburger-inner::before {
-    background-color: #fff;
+    width: 25px;
   }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .hamburger-inner::before {
-    background-color: #fff;
+    width: 25px;
   }
 }
 
@@ -223,13 +229,13 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hamburger-inner:after {
-    background-color: #fff;
+    width: 25px;
   }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .hamburger-inner:after {
-    background-color: #fff;
+    width: 25px;
   }
 }
 
@@ -257,9 +263,23 @@ body {
   transition: opacity 0.125s 0.275s ease;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .hamburger--elastic .hamburger-inner::before {
+    top: 8px;
+    transition: opacity 0.125s 0.275s ease;
+  }
+}
+
 .hamburger--elastic .hamburger-inner::after {
   top: 20px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .hamburger--elastic .hamburger-inner::after {
+    top: 16px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
 }
 
 .hamburger--elastic.is-active .hamburger-inner {
@@ -275,6 +295,13 @@ body {
 .hamburger--elastic.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(-270deg);
   transition-delay: 0.075s;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .hamburger--elastic.is-active .hamburger-inner::after {
+    transform: translate3d(0, -16px, 0) rotate(-270deg);
+    transition-delay: 0.075s;
+  }
 }
 
 /* == Slick dots == */
@@ -428,6 +455,18 @@ img {
   width: 100%;
 }
 
+.world {
+  width: 70px;
+}
+
+.company {
+  width: 100px;
+}
+
+.voice {
+  width: 100px;
+}
+
 .online {
   color: #fff;
   font-weight: 900;
@@ -447,6 +486,13 @@ img {
   width: 45px;
   height: 45px;
   border-radius: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .menu-desk {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .redes {
@@ -608,7 +654,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .welcome {
-    padding: 140px 20px 40px;
+    padding: 80px 20px 40px;
   }
 }
 
@@ -647,7 +693,7 @@ img {
 @media (min-width: 0px) and (max-width: 767px) {
   .content-video {
     align-items: center;
-    margin-top: 20px;
+    margin-top: -20px;
   }
 }
 
@@ -709,6 +755,9 @@ img {
    -----  Footer -----
    ------------------------- */
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: #3e3f36;
   color: #fff;
@@ -723,7 +772,6 @@ img {
 @media (min-width: 0px) and (max-width: 767px) {
   .footer-content {
     width: 100%;
-    padding: 20px;
   }
 }
 
@@ -731,6 +779,12 @@ img {
   .footer-content {
     width: 100%;
     padding: 20px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .footer-content p {
+    font-size: 10px;
   }
 }
 

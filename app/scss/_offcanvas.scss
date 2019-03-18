@@ -122,6 +122,10 @@ body {
   height: 24px;
   display: inline-block;
   position: relative;
+
+  @include respond-to(xs) {
+    width: 25px;
+  }
 }
 
 .hamburger-inner {
@@ -137,10 +141,10 @@ body {
   transition-duration: 0.15s;
   transition-timing-function: ease;
   @include respond-to(sm) {
-    background-color: $white;
+    width: 25px;
   }
   @include respond-to(xs) {
-    background-color: $white;
+    width: 25px;
   }
 
   &.js-hamburger {
@@ -165,10 +169,10 @@ body {
     transition-timing-function: ease;
 
     @include respond-to(sm) {
-      background-color: $white;
+      width: 25px;
     }
     @include respond-to(xs) {
-      background-color: $white;
+      width: 25px;
     }
   }
 
@@ -183,10 +187,10 @@ body {
     transition-timing-function: ease;
 
     @include respond-to(sm) {
-      background-color: $white;
+      width: 25px;
     }
     @include respond-to(xs) {
-      background-color: $white;
+      width: 25px;
     }
   }
 }
@@ -210,10 +214,19 @@ body {
 .hamburger--elastic .hamburger-inner::before {
   top: 10px;
   transition: opacity 0.125s 0.275s ease;
+  @include respond-to(xs) {
+    top: 8px;
+    transition: opacity 0.125s 0.275s ease;
+  }
 }
 .hamburger--elastic .hamburger-inner::after {
   top: 20px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  @include respond-to(xs){
+    top: 16px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
 }
 
 .hamburger--elastic.is-active .hamburger-inner {
@@ -227,4 +240,9 @@ body {
 .hamburger--elastic.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(-270deg);
   transition-delay: 0.075s;
+
+  @include respond-to(xs) {
+    transform: translate3d(0, -16px, 0) rotate(-270deg);
+    transition-delay: 0.075s;
+  }
 }

@@ -31,6 +31,19 @@ img {
     width: 100%;
   }
 }
+
+
+.world{
+  width: 70px;
+}
+
+.company {
+  width: 100px;
+}
+
+.voice{
+  width: 100px;
+}
 .online {
   color: $white;
   font-weight: 900;
@@ -51,6 +64,11 @@ img {
   width: 45px;
   height: 45px;
   border-radius: 10px;
+
+  @include respond-to(xs) {
+    width: 30px;
+    height: 30px;
+  }
   
 }
 
@@ -123,7 +141,6 @@ img {
 
   &.open{
     right: 0;
-    // top: 36%;
     transition: 0.5s ease-in-out;
     position: fixed;
   }
@@ -138,7 +155,6 @@ img {
   transition: all 2s;
   overflow: hidden;
   font-family: $montserrat;
-  // text-align: center;
   &::before{
     left: 0%;
     bottom: 0;
@@ -188,7 +204,7 @@ img {
   align-items: center;
 
   @include respond-to(xs) {
-    padding: 140px 20px 40px;
+    padding: 80px 20px 40px;
   }
   &.offcanvas-expanded {
     overflow-y: hidden;
@@ -227,7 +243,7 @@ img {
 
   @include respond-to(xs){
     align-items: center;
-    margin-top: 20px;
+    margin-top: -20px;
   }
   .title-video {
     border-radius: 10px;
@@ -279,9 +295,9 @@ img {
    -----  Footer -----
    ------------------------- */
 .footer {
-  // position: fixed;
-  // left: 0;
-  // bottom: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: $main-dejavu;
   color: $white;
@@ -289,17 +305,21 @@ img {
   font-size: 15px;
 }
 
-
 .footer-content {
   width: 50%;
 
   @include respond-to(xs) {
     width: 100%;
-    padding: 20px;  
+    // padding: 20px;  
   }
   @include respond-to(sm) {
     width: 100%;
     padding: 20px;  
+  }
+  p {
+    @include respond-to(xs) {
+      font-size: 10px;
+    }
   }
 }
 
@@ -313,6 +333,7 @@ img {
   @include respond-to(sm) {
     margin-top: 40px;
   }
+
 }
 
 .item {
