@@ -314,7 +314,7 @@ img {
   }
   @include respond-to(sm) {
     width: 100%;
-    padding: 20px;  
+    padding: 0px;  
   }
   p {
     @include respond-to(xs) {
