@@ -143,7 +143,7 @@ body {
 }
 
 .hamburger-box {
-  width: 40px;
+  width: 35px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -154,8 +154,8 @@ body {
   top: 50%;
   margin-top: -2px;
   width: 35px;
-  height: 3px;
-  background-color: #fff;
+  height: 4px;
+  background-color: #3e3f36;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
@@ -163,22 +163,34 @@ body {
   transition-timing-function: ease;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hamburger-inner {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .hamburger-inner {
+    background-color: #fff;
+  }
+}
+
 .hamburger-inner.js-hamburger {
-  background-color: #fff;
+  background-color: #3e3f36;
 }
 
 .hamburger-inner.js-hamburger:before {
-  background-color: #fff;
+  background-color: #3e3f36;
 }
 
 .hamburger-inner.js-hamburger::after {
-  background-color: #fff;
+  background-color: #3e3f36;
 }
 
 .hamburger-inner::before {
   width: 35px;
-  height: 3px;
-  background-color: #fff;
+  height: 4px;
+  background-color: #3e3f36;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
@@ -186,15 +198,39 @@ body {
   transition-timing-function: ease;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hamburger-inner::before {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .hamburger-inner::before {
+    background-color: #fff;
+  }
+}
+
 .hamburger-inner:after {
   width: 35px;
-  height: 3px;
-  background-color: #fff;
+  height: 4px;
+  background-color: #3e3f36;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hamburger-inner:after {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .hamburger-inner:after {
+    background-color: #fff;
+  }
 }
 
 .hamburger-inner::before, .hamburger-inner::after {
@@ -412,8 +448,48 @@ img {
   transition: 0.3s ease-in-out;
 }
 
+.menu-desk {
+  background-color: #41719c;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
 .redes {
   width: 30px;
+}
+
+.follow {
+  margin-left: 100px;
+  width: 120px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .follow {
+    margin-left: 50px;
+  }
+}
+
+.redes-sociales {
+  margin-left: 100px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .redes-sociales {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .redes-sociales {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .redes-sociales {
+    margin-left: 0;
+  }
 }
 
 .redes-movil {
@@ -477,6 +553,12 @@ img {
   content: '';
   position: absolute;
   transition: transform .5s ease;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-link::before {
+    width: 30%;
+  }
 }
 
 .nav-link::after {
@@ -559,12 +641,30 @@ img {
 
 .content-video .title-video {
   border-radius: 10px;
-  width: 65%;
+  width: 55%;
   margin-bottom: 20px;
   background-color: #41719c;
   justify-content: space-around;
   align-items: center;
   height: 45px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content-video .title-video {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-video .title-video {
+    width: 95%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-video .title-video {
+    width: 100%;
+  }
 }
 
 .content-video .title-video h2 {
@@ -574,6 +674,11 @@ img {
   color: #fff;
   padding: 10px 5px 0px;
   text-align: center;
+}
+
+.content-video .title-video i {
+  color: #fff;
+  font-size: 90px;
 }
 
 #myVideo {

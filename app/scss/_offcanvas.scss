@@ -118,7 +118,7 @@ body {
 }
 
 .hamburger-box {
-  width: 40px;
+  width: 35px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -129,45 +129,65 @@ body {
   top: 50%;
   margin-top: -2px;
   width: 35px;
-  height: 3px;
-  background-color: $white;
+  height: 4px;
+  background-color: $main-dejavu;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease;
+  @include respond-to(sm) {
+    background-color: $white;
+  }
+  @include respond-to(xs) {
+    background-color: $white;
+  }
 
   &.js-hamburger {
-    background-color: $white;
+    background-color: $main-dejavu;
 
     &:before {
-      background-color: $white;
+      background-color: $main-dejavu;
     }
     &::after {
-      background-color: $white;
+      background-color: $main-dejavu;
     }
   }
 
   &::before{
     width: 35px;
-    height: 3px;
-    background-color: $white;
+    height: 4px;
+    background-color: $main-dejavu;
     border-radius: 3px;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
     transition-timing-function: ease;
+
+    @include respond-to(sm) {
+      background-color: $white;
+    }
+    @include respond-to(xs) {
+      background-color: $white;
+    }
   }
 
   &:after{
     width: 35px;
-    height: 3px;
-    background-color: $white;
+    height: 4px;
+    background-color: $main-dejavu;
     border-radius: 3px;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
     transition-timing-function: ease;
+
+    @include respond-to(sm) {
+      background-color: $white;
+    }
+    @include respond-to(xs) {
+      background-color: $white;
+    }
   }
 }
 

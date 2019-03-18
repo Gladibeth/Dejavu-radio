@@ -12,13 +12,16 @@
         .col-lg-4.col-md-4.col-sm-4.d-flex.justify-content-center
           %img{src:"assets/img/img_2.webp", alt:""}/
         .col-lg-4.col-md-4.col-sm-4.d-flex.justify-content-end.flex-column.align-items-end
-          .audio
-            %img{src:"assets/img/audio.gif", alt:""}/
-          %a.online{:href => "#"} ONLINE RADIO
-        .col-lg-4.col-md-4.col-sm-4.mt-4
-          %img{src:"assets/img/img_3.webp", alt:""}/
-        .col-lg-4.col-md-4.col-sm-4.mt-4.d-flex.align-items-center{style: "flex-direction: column;"}
-          %img{src:"assets/img/img_4.webp", alt:""}/
+          %a.online{:href => "#"} ONLINE 
+          %a.online{:href => "#"} RADIO
+        .col-lg-4.col-md-4.col-sm-4
+          %img{src:"assets/img/img_3.webp", alt:"",style: "width: 140px;"}/
+        .col-lg-4.col-md-4.col-sm-4.d-flex.justify-content-center
+          %button.menu-desk.menu-desk-js.p-0.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
+            %span.hamburger-box
+              %span.hamburger-inner
+        .col-lg-4.col-md-4.col-sm-4.d-flex.align-items-center{style: "flex-direction: column;"}
+          %img.follow{src:"assets/img/img_4.webp", alt:""}/
           .redes-sociales.mt-2
             %a{href:""}
               %img.redes{src:"assets/img/1.webp", alt:""}/
@@ -33,11 +36,7 @@
             %a{href:""}
               %img.redes{src:"assets/img/6.webp", alt:""}/
             %a{href:""}
-              %img.redes{src:"assets/img/7.png", alt:""}/
-        .col-lg-4.col-md-4.col-sm-4.mt-4.d-flex.justify-content-end
-          %button.menu-desk-js.p-0.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
-            %span.hamburger-box
-              %span.hamburger-inner
+              %img.redes{src:"assets/img/6.webp", alt:""}/
       .menu-movil.d-lg-none
         %ul.navbar-nav.p-4
           %li.nav-item
@@ -63,7 +62,7 @@
           %a{href:""}
             %img.redes{src:"assets/img/6.webp", alt:""}/
           %a{href:""}
-            %img.redes{src:"assets/img/7.png", alt:""}/
+            %img.redes{src:"assets/img/6.webp", alt:""}/
 .menu-sidebar
   %ul.navbar-nav.p-4
     %li.nav-item
@@ -75,38 +74,3 @@
     %li.nav-item
       %a.nav-link{:href => "collaborators.html", class: "#{$action_name == ' collaborators' ? 'active' : ''}"} Colaboradores
 
-%script{:src => "js/jquery.jplayer.min.js", :type => "text/javascript"}
-:javascript
-  $(document).ready(function(){
-      var stream = {
-      title: "Werner Stream Hd",
-      mp3: "http://s5.voscast.com:8594/;"
-  },
-  ready = false;
-    $("#jquery_jplayer_1").jPlayer({
-    ready: function (event) {
-      ready = true;
-          $(this).jPlayer("setMedia", stream).jPlayer("play");
-
-      },
-      pause: function() {
-          $(this).jPlayer("clearMedia");
-      },
-      error: function(event) {
-          if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
-
-              $(this).jPlayer("setMedia", stream).jPlayer("play");
-          }
-      },
-      swfPath: "/js",
-      supplied: "mp3",
-      preload: "none",
-      wmode: "window",
-      keyEnabled: true,
-      cssSelectorAncestor: "",
-      cssSelector: {
-      play: "#play",
-      pause: "#pause",
-      },
-  });
-  });

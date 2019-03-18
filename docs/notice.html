@@ -34,16 +34,21 @@
             <img alt='' src='assets/img/img_2.webp'>
           </div>
           <div class='col-lg-4 col-md-4 col-sm-4 d-flex justify-content-end flex-column align-items-end'>
-            <div class='audio'>
-              <img alt='' src='assets/img/audio.gif'>
-            </div>
-            <a class='online' href='#'>ONLINE RADIO</a>
+            <a class='online' href='#'>ONLINE</a>
+            <a class='online' href='#'>RADIO</a>
           </div>
-          <div class='col-lg-4 col-md-4 col-sm-4 mt-4'>
-            <img alt='' src='assets/img/img_3.webp'>
+          <div class='col-lg-4 col-md-4 col-sm-4'>
+            <img alt='' src='assets/img/img_3.webp' style='width: 140px;'>
           </div>
-          <div class='col-lg-4 col-md-4 col-sm-4 mt-4 d-flex align-items-center' style='flex-direction: column;'>
-            <img alt='' src='assets/img/img_4.webp'>
+          <div class='col-lg-4 col-md-4 col-sm-4 d-flex justify-content-center'>
+            <button class='menu-desk menu-desk-js p-0 border-0 hamburger hamburger--elastic' data-toggle='offcanvas' type='button'>
+                <span class='hamburger-box'>
+                  <span class='hamburger-inner'></span>
+                </span>
+              </button>
+          </div>
+          <div class='col-lg-4 col-md-4 col-sm-4 d-flex align-items-center' style='flex-direction: column;'>
+            <img alt='' class='follow' src='assets/img/img_4.webp'>
             <div class='redes-sociales mt-2'>
               <a href=''>
                   <img alt='' class='redes' src='assets/img/1.webp'>
@@ -64,16 +69,9 @@
                   <img alt='' class='redes' src='assets/img/6.webp'>
                 </a>
               <a href=''>
-                  <img alt='' class='redes' src='assets/img/7.png'>
+                  <img alt='' class='redes' src='assets/img/6.webp'>
                 </a>
             </div>
-          </div>
-          <div class='col-lg-4 col-md-4 col-sm-4 mt-4 d-flex justify-content-end'>
-            <button class='menu-desk-js p-0 border-0 hamburger hamburger--elastic' data-toggle='offcanvas' type='button'>
-                <span class='hamburger-box'>
-                  <span class='hamburger-inner'></span>
-                </span>
-              </button>
           </div>
         </div>
         <div class='menu-movil d-lg-none'>
@@ -113,7 +111,7 @@
                 <img alt='' class='redes' src='assets/img/6.webp'>
               </a>
             <a href=''>
-                <img alt='' class='redes' src='assets/img/7.png'>
+                <img alt='' class='redes' src='assets/img/6.webp'>
               </a>
           </div>
         </div>
@@ -136,42 +134,6 @@
       </li>
     </ul>
   </div>
-  <script src='js/jquery.jplayer.min.js' type='text/javascript'></script>
-  <script>
-    $(document).ready(function() {
-      var stream = {
-          title: "Werner Stream Hd",
-          mp3: "http://s5.voscast.com:8594/;"
-        },
-        ready = false;
-      $("#jquery_jplayer_1").jPlayer({
-        ready: function(event) {
-          ready = true;
-          $(this).jPlayer("setMedia", stream).jPlayer("play");
-
-        },
-        pause: function() {
-          $(this).jPlayer("clearMedia");
-        },
-        error: function(event) {
-          if (ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
-
-            $(this).jPlayer("setMedia", stream).jPlayer("play");
-          }
-        },
-        swfPath: "/js",
-        supplied: "mp3",
-        preload: "none",
-        wmode: "window",
-        keyEnabled: true,
-        cssSelectorAncestor: "",
-        cssSelector: {
-          play: "#play",
-          pause: "#pause",
-        },
-      });
-    });
-  </script>
   <section class="welcome" style="background-image: url('assets/img/bg_1.webp')">
     <div class="container">
       <div class="row">
