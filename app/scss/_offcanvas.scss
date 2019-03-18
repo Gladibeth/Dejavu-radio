@@ -30,11 +30,11 @@ body {
     transition-property: left, visibility;
 
     @include respond-to(xs) {
-      top: 56px;
+      top: 145px;
     }
 
     @include respond-to(sm) {
-      top: 48px;
+      top: 180px;
     }
   }
   .offcanvas-collapse.open {
