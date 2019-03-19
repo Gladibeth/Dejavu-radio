@@ -14,6 +14,7 @@
 
 .content-navbar {
   width: 100%;
+
 }
 
 img {
@@ -34,15 +35,37 @@ img {
 
 
 .world{
-  width: 70px;
+  width: 140px;
+
+  @include respond-to(xs) {
+    width: 70px;
+  }
+  @include respond-to(sm) {
+    width: 70px;
+  }
 }
 
 .company {
-  width: 100px;
+  width: 120px;
+  @include respond-to(xs) {
+    width: 100px;
+  }
 }
 
 .voice{
   width: 100px;
+}
+
+.online-content {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+ 
+
+  @include respond-to(sm) {
+    align-items: flex-end;
+  }
 }
 .online {
   color: $white;
@@ -53,7 +76,7 @@ img {
 
   &:hover{
     text-decoration: none;
-    color: $orange-dejavu;
+    color: $white;
     transition: 0.3s ease-in-out;
   }
 }
@@ -66,8 +89,8 @@ img {
   border-radius: 10px;
 
   @include respond-to(xs) {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
   }
   
 }
@@ -141,6 +164,7 @@ img {
 
   &.open{
     right: 0;
+    // top: 36%;
     transition: 0.5s ease-in-out;
     position: fixed;
   }
@@ -198,19 +222,31 @@ img {
   background-position: center bottom;
   background-repeat: repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 700px;
+  height: auto;
   padding: 40px;
   display: flex;
-  align-items: center;
+  // align-items: center;
 
   @include respond-to(xs) {
-    padding: 80px 20px 40px;
+    padding: 0px 20px 40px;
+    min-height: 600px;
+    align-items: center;
+  }
+
+  @include respond-to(sm) {
+    padding: 160px 40px;
   }
   &.offcanvas-expanded {
     overflow-y: hidden;
   }
 }
 
+.welcome-movil{
+  @include respond-to(xs) {
+    padding-top: 100px;
+  }
+}
 
 .text-welcome {
   p{
@@ -314,9 +350,10 @@ img {
   }
   @include respond-to(sm) {
     width: 100%;
-    padding: 0px;  
+    padding: 20px;  
   }
   p {
+    font-size: 13px;
     @include respond-to(xs) {
       font-size: 10px;
     }

@@ -125,6 +125,7 @@ body {
 
   @include respond-to(xs) {
     width: 25px;
+    height: 21px;
   }
 }
 

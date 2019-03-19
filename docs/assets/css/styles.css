@@ -152,6 +152,7 @@ body {
 @media (min-width: 0px) and (max-width: 767px) {
   .hamburger-box {
     width: 25px;
+    height: 21px;
   }
 }
 
@@ -456,15 +457,46 @@ img {
 }
 
 .world {
-  width: 70px;
+  width: 140px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .world {
+    width: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .world {
+    width: 70px;
+  }
 }
 
 .company {
-  width: 100px;
+  width: 120px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .company {
+    width: 100px;
+  }
 }
 
 .voice {
   width: 100px;
+}
+
+.online-content {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .online-content {
+    align-items: flex-end;
+  }
 }
 
 .online {
@@ -477,7 +509,7 @@ img {
 
 .online:hover {
   text-decoration: none;
-  color: #f78f1e;
+  color: #fff;
   transition: 0.3s ease-in-out;
 }
 
@@ -490,8 +522,8 @@ img {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .menu-desk {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
   }
 }
 
@@ -646,20 +678,34 @@ img {
   background-position: center bottom;
   background-repeat: repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 700px;
+  height: auto;
   padding: 40px;
   display: flex;
-  align-items: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .welcome {
-    padding: 80px 20px 40px;
+    padding: 0px 20px 40px;
+    min-height: 600px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .welcome {
+    padding: 160px 40px;
   }
 }
 
 .welcome.offcanvas-expanded {
   overflow-y: hidden;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .welcome-movil {
+    padding-top: 100px;
+  }
 }
 
 .text-welcome p {
@@ -778,8 +824,12 @@ img {
 @media (min-width: 768px) and (max-width: 991px) {
   .footer-content {
     width: 100%;
-    padding: 0px;
+    padding: 20px;
   }
+}
+
+.footer-content p {
+  font-size: 13px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
